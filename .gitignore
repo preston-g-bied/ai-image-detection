@@ -1,0 +1,27 @@
+# Data (never commit — GenImage is ~430 GB)
+data/
+outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual envs
+.venv/
+venv/
+.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Archives & checkpoints
+*.zip
+*.pt
+*.pth
+*.ckpt
+
+# preston download script
+scripts/download_all.sh
