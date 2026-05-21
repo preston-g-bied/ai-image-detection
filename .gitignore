@@ -1,4 +1,4 @@
-# Data (never commit — GenImage is ~430 GB)
+# Data (never commit — dataset is ~7.8 GB)
 data/
 outputs/
 
@@ -12,10 +12,15 @@ __pycache__/
 venv/
 .env
 
-# IDE / OS
+# Kaggle credentials (never commit)
+.kaggle/
+kaggle.json
+
+# IDE / OS / tooling
 .vscode/
 .idea/
 .DS_Store
+.claude/
 
 # Archives & checkpoints
 *.zip
@@ -23,5 +28,5 @@ venv/
 *.pth
 *.ckpt
 
-# preston download script
-scripts/download_all.sh
+# temp scripts
+scripts/inspect_tiny_genimage.py
