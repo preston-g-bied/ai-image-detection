@@ -1,1 +1,10 @@
 kaggle
+torch
+open_clip_torch
+grad-cam
+opencv-python
+matplotlib
+numpy
+pillow
+tqdm
+ 

@@ -68,6 +68,62 @@ class TinyGenImageDataset(Dataset):
         if self.transform:
             image = self.transform(image)
         return image, torch.tensor(label, dtype=torch.long)
+    
+class TinyGenImagePerGeneratorDataset(Dataset):
+    """Same as TinyGenImageDataset but walks the per-generator layout:
+
+        <root>/<generator>/<split>/{ai,nature}/*
+
+    Also records which generator each sample came from in self.gen_indices
+    (aligned to self.samples), so we can compute per-generator val metrics later.
+    Returns (image, label) — drop-in compatible with TinyGenImageDataset.
+    """
+
+    def __init__(self, root_dir=None, split='train', transform=None, generators=None):
+        if root_dir is None:
+            self.root_dir = Path.cwd()
+        else:
+            self.root_dir = Path(root_dir)
+
+        self.split = split
+        self.transform = transform
+        self.samples = []
+        gen_indices = []
+
+        self.valid_extensions = {'.jpg', '.jpeg', '.png', '.bmp'}
+
+        if generators is None:
+            generators = sorted(d.name for d in self.root_dir.iterdir() if d.is_dir())
+        self.generators = generators
+
+        for gen_idx, gen in enumerate(generators):
+            split_path = self.root_dir / gen / self.split
+            if not split_path.exists():
+                continue
+            for label_dir, label in [('ai', 1), ('nature', 0)]:
+                img_dir = split_path / label_dir
+                if img_dir.exists():
+                    for img_path in img_dir.rglob('*'):
+                        if img_path.suffix.lower() in self.valid_extensions:
+                            self.samples.append((str(img_path), label))
+                            gen_indices.append(gen_idx)
+
+        self.gen_indices = np.array(gen_indices, dtype=np.int32)
+
+        print(f"Loaded {len(self.samples)} samples from {split} split "
+              f"across {len(generators)} generators")
+        print(f"  AI samples: {sum(1 for _, label in self.samples if label == 1)}")
+        print(f"  Nature samples: {sum(1 for _, label in self.samples if label == 0)}")
+
+    def __len__(self):
+        return len(self.samples)
+
+    def __getitem__(self, idx):
+        img_path, label = self.samples[idx]
+        image = Image.open(img_path).convert('RGB')
+        if self.transform:
+            image = self.transform(image)
+        return image, torch.tensor(label, dtype=torch.long)
 
 class FeatureDataset(Dataset):
     """Dataset for pre-extracted features"""
@@ -81,9 +137,9 @@ class FeatureDataset(Dataset):
     def __getitem__(self, idx):
         return self.features[idx], self.targets[idx]
 
-def compute_metrics_fast(predictions, targets):
-    """Vectorized metrics computation"""
+def compute_metrics_fast(predictions, probs, targets):
     predictions = np.array(predictions) if isinstance(predictions, list) else predictions
+    probs = np.array(probs) if isinstance(probs, list) else probs
     targets = np.array(targets) if isinstance(targets, list) else targets
     
     if predictions.ndim > 1:
@@ -96,7 +152,7 @@ def compute_metrics_fast(predictions, targets):
     
     try:
         if len(np.unique(targets)) > 1:
-            metrics['auc'] = roc_auc_score(targets, predictions)
+            metrics['auc'] = roc_auc_score(targets, probs)
     except:
         pass
     
@@ -120,7 +176,12 @@ def extract_features(model, dataloader, device):
 
 def train_with_precomputed_features(model_type='large'):
     """Train using pre-extracted features with mixed precision and gradient accumulation"""
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    if torch.cuda.is_available():
+        device = torch.device('cuda')
+    elif torch.backends.mps.is_available():
+        device = torch.device('mps')
+    else:
+        device = torch.device('cpu')
     print(f"Using device: {device}")
     
     #Set model configuration based on type
@@ -146,8 +207,8 @@ def train_with_precomputed_features(model_type='large'):
     
     #Create datasets
     print("\nLoading datasets...")
-    train_dataset = TinyGenImageDataset(root_dir=None, split='train', transform=preprocess)
-    val_dataset = TinyGenImageDataset(root_dir=None, split='val', transform=preprocess)
+    train_dataset = TinyGenImagePerGeneratorDataset(root_dir='data/tiny_genimage', split='train', transform=preprocess)
+    val_dataset   = TinyGenImagePerGeneratorDataset(root_dir='data/tiny_genimage', split='val',   transform=preprocess)
     
     #Create data loaders for feature extraction
     train_loader = DataLoader(
@@ -209,14 +270,14 @@ def train_with_precomputed_features(model_type='large'):
         train_feat_dataset, 
         batch_size=512,
         shuffle=True, 
-        num_workers=2,
+        num_workers=0,
         pin_memory=True
     )
     val_feat_loader = DataLoader(
         val_feat_dataset, 
         batch_size=512, 
         shuffle=False, 
-        num_workers=2,
+        num_workers=0,
         pin_memory=True
     )
     
@@ -282,15 +343,17 @@ def train_with_precomputed_features(model_type='large'):
         
         #Validation phase
         classifier.eval()
-        val_preds, val_targets_list = [], []
-        
+        val_preds, val_probs, val_targets_list = [], [], []
+
         with torch.no_grad(), autocast(enabled=torch.cuda.is_available()):
             for features, targets in val_feat_loader:
                 logits = classifier(features)
+                probs = torch.softmax(logits, dim=1)[:, 1]   # P(AI)
+                val_probs.extend(probs.cpu().numpy())
                 val_preds.extend(torch.argmax(logits, dim=1).cpu().numpy())
                 val_targets_list.extend(targets.cpu().numpy())
-        
-        val_metrics = compute_metrics_fast(val_preds, val_targets_list)
+
+        val_metrics = compute_metrics_fast(val_preds, val_probs, val_targets_list)
         
         #Store results
         epoch_results = {

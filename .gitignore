@@ -28,5 +28,8 @@ kaggle.json
 *.pth
 *.ckpt
 
+# CLIP
+clip_cache
+
 # temp scripts
 scripts/inspect_tiny_genimage.py
