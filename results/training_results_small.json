@@ -1,0 +1,1022 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.6448416200551119,
+    "train_acc": 0.7548928571428571,
+    "val_acc": 0.8208571428571428,
+    "val_auc": 0.9049714285714286,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.913,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.9961399999999999
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.737,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.823726
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.817,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.901358
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.74,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.848106
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.759,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.8467460000000001
+      },
+      "imagenet_glide": {
+        "accuracy": 0.904,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.971832
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.876,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.953934
+      }
+    }
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.48111003854058004,
+    "train_acc": 0.8298928571428571,
+    "val_acc": 0.8374285714285714,
+    "val_auc": 0.9193967346938776,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.917,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.9972880000000001
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.733,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.841164
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.844,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.91813
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.774,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.872198
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.787,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.8753559999999999
+      },
+      "imagenet_glide": {
+        "accuracy": 0.914,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.975336
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.893,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.9634060000000001
+      }
+    }
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.35398191484537994,
+    "train_acc": 0.8545714285714285,
+    "val_acc": 0.8601428571428571,
+    "val_auc": 0.9372565306122449,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.916,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.998328
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.774,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.867956
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.857,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9347460000000001
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.808,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.901196
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.846,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.916432
+      },
+      "imagenet_glide": {
+        "accuracy": 0.921,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.9808919999999999
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.899,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.968926
+      }
+    }
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.2950924038887024,
+    "train_acc": 0.8771785714285715,
+    "val_acc": 0.8742857142857143,
+    "val_auc": 0.9491175510204082,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.935,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.9978880000000001
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.772,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.884586
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.87,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9473219999999999
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.834,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.9241079999999999
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.863,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.9421860000000001
+      },
+      "imagenet_glide": {
+        "accuracy": 0.941,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.984916
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.905,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.9698800000000001
+      }
+    }
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.26436747068708594,
+    "train_acc": 0.8901428571428571,
+    "val_acc": 0.8855714285714286,
+    "val_auc": 0.9551373877551022,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.927,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.996838
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.799,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.894304
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.886,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.95404
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.863,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.9365479999999999
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.883,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.955606
+      },
+      "imagenet_glide": {
+        "accuracy": 0.943,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.986584
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.898,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.968434
+      }
+    }
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.247307166186246,
+    "train_acc": 0.8984285714285715,
+    "val_acc": 0.893,
+    "val_auc": 0.958696081632653,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.931,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.995992
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.801,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.8990399999999998
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.891,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.959966
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.886,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.94362
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.894,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.9610700000000001
+      },
+      "imagenet_glide": {
+        "accuracy": 0.942,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.98736
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.906,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.9693139999999999
+      }
+    }
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.23544959480112249,
+    "train_acc": 0.9031071428571429,
+    "val_acc": 0.8955714285714286,
+    "val_auc": 0.9610015510204082,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.934,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.996088
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.811,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.9049400000000001
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.892,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9613940000000001
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.884,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.945722
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.903,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.964818
+      },
+      "imagenet_glide": {
+        "accuracy": 0.945,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.988998
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.9,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.9692379999999999
+      }
+    }
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.2290320027958263,
+    "train_acc": 0.9070714285714285,
+    "val_acc": 0.8998571428571429,
+    "val_auc": 0.9627288571428572,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.938,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.9960279999999999
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.819,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.90843
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.897,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9647719999999999
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.888,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.9490200000000001
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.903,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.9662200000000001
+      },
+      "imagenet_glide": {
+        "accuracy": 0.949,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.989304
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.905,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.9693260000000001
+      }
+    }
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.22384183569387955,
+    "train_acc": 0.9088214285714286,
+    "val_acc": 0.8991428571428571,
+    "val_auc": 0.963852693877551,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.927,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.9961039999999999
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.83,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.911274
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.903,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9658
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.887,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.949708
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.902,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.968882
+      },
+      "imagenet_glide": {
+        "accuracy": 0.941,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.989378
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.904,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.9697859999999999
+      }
+    }
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.21899767951531843,
+    "train_acc": 0.9110714285714285,
+    "val_acc": 0.9031428571428571,
+    "val_auc": 0.964963469387755,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.933,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.996644
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.836,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.9143060000000001
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.906,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.967292
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.888,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.95106
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.908,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.9691620000000001
+      },
+      "imagenet_glide": {
+        "accuracy": 0.947,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.990092
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.904,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.96972
+      }
+    }
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.21502965092658996,
+    "train_acc": 0.9119285714285714,
+    "val_acc": 0.9041428571428571,
+    "val_auc": 0.9657187755102041,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.941,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.9963139999999998
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.83,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.9160760000000001
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.909,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9681259999999999
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.885,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.9521759999999999
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.906,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.970548
+      },
+      "imagenet_glide": {
+        "accuracy": 0.951,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.990212
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.907,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.9699739999999999
+      }
+    }
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.21039935079487887,
+    "train_acc": 0.9143571428571429,
+    "val_acc": 0.9038571428571428,
+    "val_auc": 0.9666792244897959,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.943,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.996478
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.829,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.9186759999999999
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.91,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9689099999999999
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.884,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.953368
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.91,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.972236
+      },
+      "imagenet_glide": {
+        "accuracy": 0.948,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.9906259999999999
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.903,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.969862
+      }
+    }
+  },
+  {
+    "epoch": 13,
+    "train_loss": 0.2077309245413,
+    "train_acc": 0.9157142857142857,
+    "val_acc": 0.9067142857142857,
+    "val_auc": 0.9672548979591837,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.942,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.996612
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.835,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.9194820000000001
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.912,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.970436
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.886,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.954096
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.911,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.9724740000000001
+      },
+      "imagenet_glide": {
+        "accuracy": 0.954,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.990668
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.907,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.970098
+      }
+    }
+  },
+  {
+    "epoch": 14,
+    "train_loss": 0.2048393872651187,
+    "train_acc": 0.9170357142857143,
+    "val_acc": 0.9064285714285715,
+    "val_auc": 0.968112,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.943,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.996998
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.839,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.922754
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.914,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9700880000000001
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.885,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.954236
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.911,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.9743440000000001
+      },
+      "imagenet_glide": {
+        "accuracy": 0.949,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.9909300000000001
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.904,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.9700599999999999
+      }
+    }
+  },
+  {
+    "epoch": 15,
+    "train_loss": 0.2020536940206181,
+    "train_acc": 0.9182857142857143,
+    "val_acc": 0.9065714285714286,
+    "val_auc": 0.9685016326530612,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.936,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.9969220000000001
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.847,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.92339
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.916,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.971498
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.887,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.954688
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.911,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.974982
+      },
+      "imagenet_glide": {
+        "accuracy": 0.947,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.9907459999999999
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.902,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.970156
+      }
+    }
+  },
+  {
+    "epoch": 16,
+    "train_loss": 0.19875405701723967,
+    "train_acc": 0.9188928571428572,
+    "val_acc": 0.9098571428571428,
+    "val_auc": 0.9694635918367347,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.944,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.9971979999999999
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.843,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.9261699999999998
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.916,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.972214
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.89,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.95543
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.915,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.975966
+      },
+      "imagenet_glide": {
+        "accuracy": 0.955,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.9912360000000001
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.906,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.9707859999999999
+      }
+    }
+  },
+  {
+    "epoch": 17,
+    "train_loss": 0.19547853144732388,
+    "train_acc": 0.9213928571428571,
+    "val_acc": 0.9098571428571428,
+    "val_auc": 0.9699715510204082,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.944,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.9969899999999999
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.842,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.9267420000000001
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.918,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9730979999999999
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.889,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.9565480000000001
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.915,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.976492
+      },
+      "imagenet_glide": {
+        "accuracy": 0.955,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.9911019999999999
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.906,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.971482
+      }
+    }
+  },
+  {
+    "epoch": 18,
+    "train_loss": 0.1918463885784149,
+    "train_acc": 0.9226785714285715,
+    "val_acc": 0.9084285714285715,
+    "val_auc": 0.9705998367346939,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.933,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.9974999999999999
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.856,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.92959
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.916,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9733839999999999
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.888,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.955896
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.914,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.9777720000000001
+      },
+      "imagenet_glide": {
+        "accuracy": 0.95,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.991192
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.902,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.971218
+      }
+    }
+  },
+  {
+    "epoch": 19,
+    "train_loss": 0.1893408631736582,
+    "train_acc": 0.92375,
+    "val_acc": 0.913,
+    "val_auc": 0.9711023265306122,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.948,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.99729
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.85,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.929724
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.925,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.9746980000000001
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.888,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.957856
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.919,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.978048
+      },
+      "imagenet_glide": {
+        "accuracy": 0.954,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.990938
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.907,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.97146
+      }
+    }
+  },
+  {
+    "epoch": 20,
+    "train_loss": 0.1871682879599658,
+    "train_acc": 0.9263571428571429,
+    "val_acc": 0.9118571428571428,
+    "val_auc": 0.9718208163265307,
+    "per_generator": {
+      "imagenet_ai_0419_biggan": {
+        "accuracy": 0.943,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_biggan",
+        "auc": 0.997488
+      },
+      "imagenet_ai_0419_vqdm": {
+        "accuracy": 0.853,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0419_vqdm",
+        "auc": 0.9314679999999999
+      },
+      "imagenet_ai_0424_sdv5": {
+        "accuracy": 0.917,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_sdv5",
+        "auc": 0.974986
+      },
+      "imagenet_ai_0424_wukong": {
+        "accuracy": 0.89,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0424_wukong",
+        "auc": 0.958366
+      },
+      "imagenet_ai_0508_adm": {
+        "accuracy": 0.92,
+        "samples": 1000,
+        "generator_name": "imagenet_ai_0508_adm",
+        "auc": 0.978728
+      },
+      "imagenet_glide": {
+        "accuracy": 0.952,
+        "samples": 1000,
+        "generator_name": "imagenet_glide",
+        "auc": 0.991238
+      },
+      "imagenet_midjourney": {
+        "accuracy": 0.908,
+        "samples": 1000,
+        "generator_name": "imagenet_midjourney",
+        "auc": 0.9723100000000001
+      }
+    }
+  }
+]
