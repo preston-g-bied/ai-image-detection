@@ -1,0 +1,281 @@
+{
+  "generators": [
+    "biggan",
+    "vqdm",
+    "sdv5",
+    "wukong",
+    "adm",
+    "glide",
+    "midjourney"
+  ],
+  "generator_dirs": [
+    "imagenet_ai_0419_biggan",
+    "imagenet_ai_0419_vqdm",
+    "imagenet_ai_0424_sdv5",
+    "imagenet_ai_0424_wukong",
+    "imagenet_ai_0508_adm",
+    "imagenet_glide",
+    "imagenet_midjourney"
+  ],
+  "cells": {
+    "biggan->biggan": {
+      "accuracy": 1.0,
+      "auc": 1.0,
+      "n_eval": 1000
+    },
+    "biggan->vqdm": {
+      "accuracy": 0.503,
+      "auc": 0.9211880000000001,
+      "n_eval": 1000
+    },
+    "biggan->sdv5": {
+      "accuracy": 0.5,
+      "auc": 0.840604,
+      "n_eval": 1000
+    },
+    "biggan->wukong": {
+      "accuracy": 0.498,
+      "auc": 0.7608,
+      "n_eval": 1000
+    },
+    "biggan->adm": {
+      "accuracy": 0.509,
+      "auc": 0.901212,
+      "n_eval": 1000
+    },
+    "biggan->glide": {
+      "accuracy": 0.528,
+      "auc": 0.966532,
+      "n_eval": 1000
+    },
+    "biggan->midjourney": {
+      "accuracy": 0.499,
+      "auc": 0.82904,
+      "n_eval": 1000
+    },
+    "vqdm->biggan": {
+      "accuracy": 0.918,
+      "auc": 0.981888,
+      "n_eval": 1000
+    },
+    "vqdm->vqdm": {
+      "accuracy": 0.973,
+      "auc": 0.997236,
+      "n_eval": 1000
+    },
+    "vqdm->sdv5": {
+      "accuracy": 0.705,
+      "auc": 0.905016,
+      "n_eval": 1000
+    },
+    "vqdm->wukong": {
+      "accuracy": 0.674,
+      "auc": 0.8819119999999999,
+      "n_eval": 1000
+    },
+    "vqdm->adm": {
+      "accuracy": 0.859,
+      "auc": 0.97144,
+      "n_eval": 1000
+    },
+    "vqdm->glide": {
+      "accuracy": 0.941,
+      "auc": 0.989688,
+      "n_eval": 1000
+    },
+    "vqdm->midjourney": {
+      "accuracy": 0.611,
+      "auc": 0.8445799999999999,
+      "n_eval": 1000
+    },
+    "sdv5->biggan": {
+      "accuracy": 0.536,
+      "auc": 0.793792,
+      "n_eval": 1000
+    },
+    "sdv5->vqdm": {
+      "accuracy": 0.598,
+      "auc": 0.843612,
+      "n_eval": 1000
+    },
+    "sdv5->sdv5": {
+      "accuracy": 0.975,
+      "auc": 0.99708,
+      "n_eval": 1000
+    },
+    "sdv5->wukong": {
+      "accuracy": 0.884,
+      "auc": 0.970176,
+      "n_eval": 1000
+    },
+    "sdv5->adm": {
+      "accuracy": 0.565,
+      "auc": 0.7796719999999999,
+      "n_eval": 1000
+    },
+    "sdv5->glide": {
+      "accuracy": 0.758,
+      "auc": 0.9332200000000002,
+      "n_eval": 1000
+    },
+    "sdv5->midjourney": {
+      "accuracy": 0.904,
+      "auc": 0.977444,
+      "n_eval": 1000
+    },
+    "wukong->biggan": {
+      "accuracy": 0.536,
+      "auc": 0.665236,
+      "n_eval": 1000
+    },
+    "wukong->vqdm": {
+      "accuracy": 0.722,
+      "auc": 0.868844,
+      "n_eval": 1000
+    },
+    "wukong->sdv5": {
+      "accuracy": 0.957,
+      "auc": 0.992292,
+      "n_eval": 1000
+    },
+    "wukong->wukong": {
+      "accuracy": 0.941,
+      "auc": 0.983784,
+      "n_eval": 1000
+    },
+    "wukong->adm": {
+      "accuracy": 0.656,
+      "auc": 0.824768,
+      "n_eval": 1000
+    },
+    "wukong->glide": {
+      "accuracy": 0.827,
+      "auc": 0.925576,
+      "n_eval": 1000
+    },
+    "wukong->midjourney": {
+      "accuracy": 0.882,
+      "auc": 0.9596279999999999,
+      "n_eval": 1000
+    },
+    "adm->biggan": {
+      "accuracy": 0.82,
+      "auc": 0.9759880000000001,
+      "n_eval": 1000
+    },
+    "adm->vqdm": {
+      "accuracy": 0.749,
+      "auc": 0.9582999999999999,
+      "n_eval": 1000
+    },
+    "adm->sdv5": {
+      "accuracy": 0.518,
+      "auc": 0.780388,
+      "n_eval": 1000
+    },
+    "adm->wukong": {
+      "accuracy": 0.539,
+      "auc": 0.7824519999999999,
+      "n_eval": 1000
+    },
+    "adm->adm": {
+      "accuracy": 0.988,
+      "auc": 0.999192,
+      "n_eval": 1000
+    },
+    "adm->glide": {
+      "accuracy": 0.744,
+      "auc": 0.974404,
+      "n_eval": 1000
+    },
+    "adm->midjourney": {
+      "accuracy": 0.54,
+      "auc": 0.8553439999999999,
+      "n_eval": 1000
+    },
+    "glide->biggan": {
+      "accuracy": 0.73,
+      "auc": 0.976896,
+      "n_eval": 1000
+    },
+    "glide->vqdm": {
+      "accuracy": 0.685,
+      "auc": 0.9565960000000001,
+      "n_eval": 1000
+    },
+    "glide->sdv5": {
+      "accuracy": 0.572,
+      "auc": 0.914364,
+      "n_eval": 1000
+    },
+    "glide->wukong": {
+      "accuracy": 0.525,
+      "auc": 0.8489519999999999,
+      "n_eval": 1000
+    },
+    "glide->adm": {
+      "accuracy": 0.622,
+      "auc": 0.882656,
+      "n_eval": 1000
+    },
+    "glide->glide": {
+      "accuracy": 0.994,
+      "auc": 0.9998200000000002,
+      "n_eval": 1000
+    },
+    "glide->midjourney": {
+      "accuracy": 0.596,
+      "auc": 0.916348,
+      "n_eval": 1000
+    },
+    "midjourney->biggan": {
+      "accuracy": 0.493,
+      "auc": 0.4606,
+      "n_eval": 1000
+    },
+    "midjourney->vqdm": {
+      "accuracy": 0.501,
+      "auc": 0.5642039999999999,
+      "n_eval": 1000
+    },
+    "midjourney->sdv5": {
+      "accuracy": 0.877,
+      "auc": 0.969196,
+      "n_eval": 1000
+    },
+    "midjourney->wukong": {
+      "accuracy": 0.747,
+      "auc": 0.9035599999999999,
+      "n_eval": 1000
+    },
+    "midjourney->adm": {
+      "accuracy": 0.575,
+      "auc": 0.73736,
+      "n_eval": 1000
+    },
+    "midjourney->glide": {
+      "accuracy": 0.737,
+      "auc": 0.911424,
+      "n_eval": 1000
+    },
+    "midjourney->midjourney": {
+      "accuracy": 0.973,
+      "auc": 0.9970960000000001,
+      "n_eval": 1000
+    }
+  },
+  "summary": {
+    "in_distribution_mean_acc": 0.9777142857142856,
+    "out_of_distribution_mean_acc": 0.6699999999999999,
+    "generalization_gap": 0.3077142857142857,
+    "per_generator_ood_mean_acc": {
+      "biggan": 0.5061666666666668,
+      "vqdm": 0.7846666666666667,
+      "sdv5": 0.7075,
+      "wukong": 0.7633333333333333,
+      "adm": 0.6516666666666667,
+      "glide": 0.6216666666666667,
+      "midjourney": 0.6549999999999999
+    }
+  }
+}
